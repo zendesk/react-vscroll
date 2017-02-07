@@ -1,0 +1,67 @@
+{
+  "name": "react-vscroll",
+  "private": true,
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV=development node dev.js",
+    "build": "NODE_ENV=production node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "lint": "eslint ./src",
+    "cover:result": "jest --coverage",
+    "cover:html": "open coverage/lcov-report/index.html",
+    "cover": "npm run cover:result && npm run cover:html",
+    "test:unit:watch": "jest --watch",
+    "test:unit": "jest",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>/src"
+    ],
+    "testPathDirs": [
+      "<rootDir>/__tests__/src"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/__tests__/helpers/index.js"
+  },
+  "main": "lib/index",
+  "devDependencies": {
+    "babel-cli": "6.7.5",
+    "babel-core": "6.4.0",
+    "babel-eslint": "5.0.0",
+    "babel-jest": "18.0.0",
+    "babel-loader": "6.2.1",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-react-constant-elements": "6.5.0",
+    "babel-plugin-transform-react-inline-elements": "6.6.5",
+    "babel-polyfill": "6.7.4",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "babel-preset-react-hmre": "git+ssh://git@github.com/geekyme/babel-preset-react-hmre.git",
+    "babel-preset-stage-2": "6.13.0",
+    "babel-register": "6.7.2",
+    "enzyme": "2.7.0",
+    "eslint": "2.2.0",
+    "eslint-config-airbnb": "6.0.2",
+    "eslint-loader": "1.3.0",
+    "eslint-plugin-react": "4.1.0",
+    "fs-extra": "0.30.0",
+    "glob": "7.0.3",
+    "html-webpack-plugin": "2.8.1",
+    "jest": "18.1.0",
+    "raf": "3.3.0",
+    "react-addons-test-utils": "^15.0.0",
+    "webpack": "1.12.11",
+    "webpack-dashboard": "0.1.8",
+    "webpack-dev-middleware": "1.5.1",
+    "webpack-dev-server": "1.14.1"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
+  },
+  "dependencies": {
+    "lodash": "4.16.4"
+  }
+}
