@@ -58,10 +58,11 @@
     "webpack-dev-server": "1.14.1"
   },
   "peerDependencies": {
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   },
   "dependencies": {
-    "lodash": "4.16.4"
+    "lodash": "4.16.4",
+    "react-virtualized": "9.0.4"
   }
 }
