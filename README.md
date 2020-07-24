@@ -1,4 +1,5 @@
 React VScroll
+![repo-checks](https://github.com/zendesk/react-vscroll/workflows/repo-checks/badge.svg)
 ===
 
 **A virtual scrolling container that supports dynamic child elements with heights that could change over time. ie. dynamic subtrees / images / iframes / etc.**
