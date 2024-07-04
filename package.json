@@ -52,14 +52,14 @@
     "react-addons-test-utils": "^15.0.0",
     "webpack": "1.12.11",
     "webpack-dashboard": "0.1.8",
-    "webpack-dev-middleware": "1.5.1",
-    "webpack-dev-server": "1.14.1"
+    "webpack-dev-middleware": "5.3.4",
+    "webpack-dev-server": "3.1.11"
   },
   "peerDependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0"
   },
   "dependencies": {
-    "lodash": "4.16.4"
+    "lodash": "4.17.21"
   }
 }
